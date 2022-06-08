@@ -65,10 +65,10 @@ Or on Windows cmd:
 
 .. code-block:: text
 
-    > set FLASK_APP=flaskr
-    > set FLASK_ENV=development
-    > flask init-db
-    > flask run
+    set FLASK_APP=flaskr
+    set FLASK_ENV=development
+    flask init-db
+    flask run
 
 Open http://127.0.0.1:5000 in a browser.
 
