@@ -17,38 +17,38 @@ default Git version is the master branch.
 .. code-block:: text
 
     # clone the repository
-    $ git clone https://github.com/pallets/flask-sqlalchemy
-    $ cd flask-sqlalchemy/examples/flaskr
+    git clone https://github.com/pallets/flask-sqlalchemy
+    cd flask-sqlalchemy/examples/flaskr
     # checkout the correct version
-    $ git checkout correct-version-tag
+    git checkout correct-version-tag
 
 Create a virtualenv and activate it:
 
 .. code-block:: text
 
-    $ python3 -m venv venv
-    $ . venv/bin/activate
+    python3 -m venv venv
+    . venv/bin/activate
 
 Or on Windows cmd:
 
 .. code-block:: text
 
-    $ py -3 -m venv venv
-    $ venv\Scripts\activate.bat
+    py -3 -m venv venv
+    venv\Scripts\activate.bat
 
 Install Flaskr:
 
 .. code-block:: text
 
-    $ pip install -e .
+    pip install -e .
 
 Or if you are using the master branch, install Flask-SQLAlchemy from
 source before installing Flaskr:
 
 .. code-block:: text
 
-    $ pip install -e ../..
-    $ pip install -e .
+    pip install -e ../..
+    pip install -e .
 
 
 Run
@@ -56,10 +56,10 @@ Run
 
 .. code-block:: text
 
-    $ export FLASK_APP=flaskr
-    $ export FLASK_ENV=development
-    $ flask init-db
-    $ flask run
+    export FLASK_APP=flaskr
+    export FLASK_ENV=development
+    flask init-db
+    flask run
 
 Or on Windows cmd:
 
@@ -78,13 +78,13 @@ Test
 
 .. code-block:: text
 
-    $ pip install -e '.[test]'
-    $ pytest
+    pip install -e '.[test]'
+    pytest
 
 Run with coverage report:
 
 .. code-block:: text
 
-    $ coverage run -m pytest
-    $ coverage report
-    $ coverage html  # open htmlcov/index.html in a browser
+    coverage run -m pytest
+    coverage report
+    coverage html  # open htmlcov/index.html in a browser
